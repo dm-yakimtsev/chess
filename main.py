@@ -19,6 +19,7 @@ while control.running:
     screen.fill("white")
     screen.blit(control.board.image,
                 ((control.wight // 2) - control.board.image.get_rect().width // 2, 0))  # Отображаем доску по центру
+    control.board.render()
     pygame.display.update()
     clock.tick(60)
 
